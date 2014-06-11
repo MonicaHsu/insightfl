@@ -43,7 +43,7 @@ def index():
     # Add data to dictionary
     var_dict["data"] = data
 
-    return render_template('homes.html', settings=var_dict)
+    return render_template('index.html', settings=var_dict)
 
 
 @app.errorhandler(404)
