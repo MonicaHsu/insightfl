@@ -45,20 +45,6 @@ def index():
 
     return render_template('homes.html', settings=var_dict)
 
-@app.route('/home')
-def home():
-    # Renders home.html.
-    return render_template('home.html')
-
-@app.route('/slides')
-def about():
-    # Renders slides.html.
-    return render_template('slides.html')
-
-@app.route('/author')
-def contact():
-    # Renders author.html.
-    return render_template('author.html')
 
 @app.errorhandler(404)
 def page_not_found(error):
